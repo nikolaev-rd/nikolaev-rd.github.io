@@ -16,6 +16,9 @@ defaults:
       layout: "post"
 
 topics:
+  - name: Monitoring
+    web_url: https://github.com/topics/monitoring
+    
   - name: Bash
     web_url: https://github.com/topics/bash
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/bash/bash.png
