@@ -20,6 +20,7 @@ topics:
    
   - name: Zabbix
     web_url: https://github.com/topics/zabbix
+    image_url: https://avatars1.githubusercontent.com/u/4561226?s=200&v=4
     
   - name: Ansible
     web_url: https://github.com/topics/ansible
