@@ -18,6 +18,9 @@ defaults:
 topics:
   - name: Monitoring
     web_url: https://github.com/topics/monitoring
+   
+  - name: Zabbix
+    web_url: https://github.com/topics/zabbix
     
   - name: Ansible
     web_url: https://github.com/topics/ansible
