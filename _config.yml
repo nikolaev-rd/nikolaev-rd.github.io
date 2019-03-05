@@ -18,6 +18,10 @@ topics:
   - name: Monitoring
     web_url: https://github.com/topics/monitoring
    
+  - name: Grafana
+    web_url: https://github.com/topics/grafana
+    image_url: https://raw.githubusercontent.com/nikolaev-rd/Zabbix-AlertScripts/master/_img/Grafana_logo_circle.png
+  
   - name: Zabbix
     web_url: https://github.com/topics/zabbix
     image_url: https://avatars1.githubusercontent.com/u/4561226
