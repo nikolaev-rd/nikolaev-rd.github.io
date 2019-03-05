@@ -28,7 +28,7 @@ topics:
     
   - name: Netdata
     web_url: https://github.com/topics/netdata
-    image_url: https://raw.githubusercontent.com/netdata/netdata/master/web/gui/images/netdata-logomark.svg
+    image_url: https://raw.githubusercontent.com/netdata/netdata/master/web/gui/images/favicon-96x96.png
     
   - name: InfluxData
     web_url: https://github.com/topics/influxdata
