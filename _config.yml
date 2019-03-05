@@ -26,6 +26,10 @@ topics:
     web_url: https://github.com/topics/prometheus
     image_url: https://raw.githubusercontent.com/prometheus/docs/master/static/prometheus_logo.png
     
+  - name: InfluxData
+    web_url: https://github.com/topics/influxdata
+    image_url: https://raw.githubusercontent.com/influxdata/docs.influxdata.com/master/static/img/influx-logo-cubo-dark.png
+    
   - name: Ansible
     web_url: https://github.com/topics/ansible
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/ansible/ansible.png
