@@ -26,6 +26,10 @@ topics:
     web_url: https://github.com/topics/prometheus
     image_url: https://raw.githubusercontent.com/prometheus/docs/master/static/prometheus_logo.png
     
+  - name: Netdata
+    web_url: https://github.com/topics/netdata
+    image_url: https://github.com/netdata/netdata/blob/master/web/gui/images/netdata-logomark.svg
+    
   - name: InfluxData
     web_url: https://github.com/topics/influxdata
     image_url: https://raw.githubusercontent.com/influxdata/docs.influxdata.com/master/static/img/influx-logo-cubo-dark.png
