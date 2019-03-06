@@ -40,7 +40,7 @@ topics:
     
   - name: StackStorm
     web_url: https://github.com/topics/stackstorm
-    image_url: https://raw.githubusercontent.com/StackStorm/st2/master/stackstorm_logo.png
+    image_url: https://avatars1.githubusercontent.com/u/4969009
     
   - name: Ansible
     web_url: https://github.com/topics/ansible
