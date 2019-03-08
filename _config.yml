@@ -38,6 +38,10 @@ topics:
     web_url: https://github.com/topics/elasticsearch
     image_url: https://avatars0.githubusercontent.com/u/6764390
     
+  - name: ClickHouse
+    web_url: https://github.com/topics/clickhouse
+    image_url: https://raw.githubusercontent.com/yandex/ClickHouse/master/website/images/logo.png
+    
   - name: InfluxData
     web_url: https://github.com/topics/influxdata
     image_url: https://raw.githubusercontent.com/influxdata/docs.influxdata.com/master/static/img/influx-logo-cubo-dark.png
