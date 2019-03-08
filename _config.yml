@@ -50,6 +50,10 @@ topics:
     web_url: https://github.com/topics/influxdata
     image_url: https://raw.githubusercontent.com/influxdata/docs.influxdata.com/master/static/img/influx-logo-cubo-dark.png
     
+  - name: Loki
+    web_url: https://github.com/topics/loki
+    image_url: https://raw.githubusercontent.com/grafana/loki/master/docs/logo.png
+    
   - name: StackStorm
     web_url: https://github.com/topics/stackstorm
     image_url: https://avatars1.githubusercontent.com/u/4969009
