@@ -46,6 +46,10 @@ topics:
     web_url: https://github.com/topics/elasticsearch
     image_url: https://avatars0.githubusercontent.com/u/6764390
     
+  - name: Graylog
+    web_url: https://github.com/topics/graylog
+    image_url: https://avatars1.githubusercontent.com/u/474892
+    
   - name: ClickHouse
     web_url: https://github.com/topics/clickhouse
     image_url: https://raw.githubusercontent.com/yandex/ClickHouse/master/website/images/logo.png
