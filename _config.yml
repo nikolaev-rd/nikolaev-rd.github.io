@@ -26,6 +26,10 @@ topics:
     web_url: https://github.com/topics/zabbix
     image_url: https://avatars1.githubusercontent.com/u/4561226
     
+  - name: Icinga
+    web_url: https://github.com/topics/icinga
+    image_url: https://avatars0.githubusercontent.com/u/835441
+    
   - name: Prometheus
     web_url: https://github.com/topics/prometheus
     image_url: https://raw.githubusercontent.com/prometheus/docs/master/static/prometheus_logo.png
