@@ -34,6 +34,10 @@ topics:
     web_url: https://github.com/topics/netdata
     image_url: https://raw.githubusercontent.com/netdata/netdata/master/web/gui/images/favicon-96x96.png
     
+  - name: Graphite
+    web_url: https://github.com/topics/graphite
+    image_url: https://avatars0.githubusercontent.com/u/1714806
+    
   - name: ElasticSearch
     web_url: https://github.com/topics/elasticsearch
     image_url: https://avatars0.githubusercontent.com/u/6764390
