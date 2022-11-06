@@ -52,7 +52,7 @@ topics:
     
   - name: ClickHouse
     web_url: https://github.com/topics/clickhouse
-    image_url: https://raw.githubusercontent.com/yandex/ClickHouse/master/website/images/logo.png
+    image_url: https://raw.githubusercontent.com/ClickHouse/clickhouse-presentations/master/images/logo-400x240.png
     
   - name: Loghouse
     web_url: https://github.com/flant/loghouse
