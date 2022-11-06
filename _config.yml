@@ -36,7 +36,7 @@ topics:
     
   - name: Netdata
     web_url: https://github.com/topics/netdata
-    image_url: https://raw.githubusercontent.com/netdata/netdata/master/web/gui/images/favicon-96x96.png
+    image_url: https://user-images.githubusercontent.com/1153921/95269366-1b814680-07ee-11eb-8ff4-c1b0b8758499.png
     
   - name: Graphite
     web_url: https://github.com/topics/graphite
