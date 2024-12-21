@@ -1,9 +1,20 @@
-<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Interests</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Topics that I want to learn more about.</p>
-<div class="d-flex flex-wrap gutter-condensed mb-4">
-  {% for topic in site.topics limit: 24 %}
-    <div class="col-6 col-md-12 col-lg-6 col-xl-4 mb-3">
-      {% include topic-card.html %}
+{% assign interests = site.data.data.interests %}
+{% if interests %}
+<section class="resume-section interests-section mb-5">
+    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">{{ site.data.labels.interests | default: "Interests" }}</h2>
+    <div class="resume-section-content">
+        <ul class="list-unstyled">
+            {% for interest in interests %}
+            <li class="resume-interest-name mb-1">
+                {% if interest.link %}
+                <a href="{{ interest.link }}">{{ interest.name }}</a>
+                {% else %}
+                {{ interest.name }}
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
     </div>
-  {% endfor %}
-</div>
+</section>
+<!--//interests-section-->
+{% endif %}
