@@ -1,97 +1,88 @@
-layout: stacked
-style: dark
+---
+# Site Settings
+
+# SEO plugin
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+
+# Site's title.
+# Used as part of the title tag like "Home | Ben's Awesome Site".
+title: Роман Николаев — Резюме
+
+# Global author information.
+# See Advanced usage:
+# https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md#author-information
+author: Роман Николаев
+
+# A short description (e.g., A blog dedicated to reviewing cat gifs),
+# used as part of the title tag like "Ben's Awesome Site | A blog dedicated to reviewing cat gifs"
+# instead of "Ben's Awesome Site | Long description about a blog dedicated to reviewing cat gifs"
+# that would be used when page.title is not defined.
+tagline: Team Lead & Site Reliability Engineer
+
+# A longer description used for the description meta tag.
+# Also used as fallback for pages that don't provide their own description,
+# and also as part of the page's title tag if neither "page.title" nor "site.tagline"
+# has been defined.
+description: ""
+
+# The full URL to your site.
+# Note: site.github.url will be used by default.
+url: https://nikolaev-rd.github.io
+
+# Change it according to your repository name
+baseurl: ""
+
+# Specify social profiles.
+# https://developers.google.com/search/docs/guides/enhance-site#add-your-sites-name-logo-and-social-links
+social:
+  links:
+    - https://github.com/nikolaev-rd
+
+# yamllint disable-line rule:comments
+#twitter:
+#  # The site's Twitter handle.
+#  username: stevedoe123
+#  # The site's default card type
+#  card: summary
+
+google_site_verification: ""  # Put your google verification tag here
+# End SEO
+
+# Style will be applied only after restarting the build or serve.
+# Just choose one of the options:
+# gray | blue | turquoise | green | berry | red
+theme_skin: green
 
 plugins:
-  - jekyll-octicons
-  - jekyll-github-metadata
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-permalink: /:year/:month/:day/:title/
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
-defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
+encoding: utf-8
 
-topics:
-  - name: Monitoring
-    web_url: https://github.com/topics/monitoring
-   
-  - name: Grafana
-    web_url: https://github.com/topics/grafana
-    image_url: https://raw.githubusercontent.com/nikolaev-rd/Zabbix-AlertScripts/master/_img/Grafana_logo_circle.png
-  
-  - name: Zabbix
-    web_url: https://github.com/topics/zabbix
-    image_url: https://avatars1.githubusercontent.com/u/4561226
-    
-  - name: Icinga
-    web_url: https://github.com/topics/icinga
-    image_url: https://avatars0.githubusercontent.com/u/835441
-    
-  - name: Prometheus
-    web_url: https://github.com/topics/prometheus
-    image_url: https://raw.githubusercontent.com/prometheus/docs/master/static/prometheus_logo.png
-    
-  - name: Netdata
-    web_url: https://github.com/topics/netdata
-    image_url: https://user-images.githubusercontent.com/1153921/95268672-a3665100-07ec-11eb-8078-db619486d6ad.png
-    
-  - name: Graphite
-    web_url: https://github.com/topics/graphite
-    image_url: https://avatars0.githubusercontent.com/u/1714806
-    
-  - name: ElasticSearch
-    web_url: https://github.com/topics/elasticsearch
-    image_url: https://avatars0.githubusercontent.com/u/6764390
-    
-  - name: Graylog
-    web_url: https://github.com/topics/graylog
-    image_url: https://avatars1.githubusercontent.com/u/474892
-    
-  - name: ClickHouse
-    web_url: https://github.com/topics/clickhouse
-    image_url: https://raw.githubusercontent.com/ClickHouse/clickhouse-presentations/master/images/logo-400x240.png
-    
-  - name: Loghouse
-    web_url: https://github.com/flant/loghouse
-    image_url: https://raw.githubusercontent.com/flant/loghouse/master/docs/logo.png
-    
-  - name: Loki
-    web_url: https://github.com/topics/loki
-    image_url: https://raw.githubusercontent.com/grafana/loki/master/docs/sources/logo.png
-    
-  - name: InfluxData
-    web_url: https://github.com/topics/influxdata
-    image_url: https://raw.githubusercontent.com/influxdata/docs.influxdata.com/master/static/img/influx-logo-cubo-dark.png
-    
-  - name: StackStorm
-    web_url: https://github.com/topics/stackstorm
-    image_url: https://avatars1.githubusercontent.com/u/4969009
-    
-  - name: Ansible
-    web_url: https://github.com/topics/ansible
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/ansible/ansible.png
-    
-  - name: Bash
-    web_url: https://github.com/topics/bash
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/bash/bash.png
+# Build settings
+compress-site: true
 
-  - name: Python
-    web_url: https://github.com/topics/python
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
-  
-  - name: PHP
-    web_url: https://github.com/topics/php
-    image_url: https://raw.githubusercontent.com/github/explore/ccc16358ac4530c6a69b1b80c7223cd2744dea83/topics/php/php.png
-  
-  - name: PostgreSQL
-    web_url: https://github.com/topics/postgresql
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/postgresql/postgresql.png
-    
-  - name: WordPress
-    web_url: https://github.com/topics/wordpress
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/wordpress/wordpress.png
-    
-theme: jekyll-theme-tactile
+# http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile*
+  - LICENSE
+  - README.md
+  - CNAME
+  - vendor
+  - docker-compose.yml
+  - Dockerfile*
+  - "*.sh"
+  - ".*"
+  - .env

@@ -1,0 +1,280 @@
+---
+header:
+  # Profile information
+  avatar: profile.jpg  # name of the square picture file inside folder /assets/images/
+  email:  # stevedoe@example.com
+  telegram: Nikolaev_RD
+  phone:  # +7 900 123 45 67
+  website: https://nikolaev-rd.github.io
+  location: РФ, Москва
+
+  # Right column with icons
+  linkedin:  # stevedoe
+  habr: r_j
+  github: nikolaev-rd
+  gitlab: nikolaev-rd
+  bitbucket:  # project-name
+  vk: nikolaev_rd
+  twitter:  # "@stevedoe"
+  instagram: nikolaev.rd
+  500px: nikolaev_rd
+  stack-overflow:  # Number/Username, e.g. 123456/alandoe
+
+summary: |
+  В ИТ более 15 лет: начинал системным администратором, работал в госсекторе, в банковской сфере, и даже когда-то давно был web-мастером.
+
+  Моя специализация — системы мониторинга (метрики, логи, Tracing, APM): архитектура, процессы, алертинг, визуализация.
+
+  Обладаю опытом SRE: построение процесса дежурств, наблюдаемость (мониторинг, алерты, SLA), написание постмортемов, создание архитектуры отказоустойчивых сервисов. Также есть опыт руководителя (Team/Tech Lead SRE): планирование, приоритезация, работа с обратной связью, ревью.
+
+education:
+  - degree: Инженер
+    university: Российский университет транспорта — РУТ (МИИТ)
+    time: 2002 – 2007
+    details: |
+      Институт управления и информационных технологий, кафедра "Вычислительные системы и сети".
+
+experiences:
+  - role: SRE & Team Lead
+    time: 2016 – ...
+    company:
+      name: Т‑Банк
+      url: https://www.tbank.ru/
+    details: |
+      Участие в проектах собственной разработки Т‑Банк:
+      * [Sage](https://www.tbank.ru/software/sage/) — Full-stack observability platform, которая обеспечивает мониторинг ИТ-инфраструктуры и всех сервисов компании в режиме реального времени.<br>
+        Проект очень важен для компании — как с точки зрения мониторинга всех своих сервисов и ИТ-инфраструктуры, а также как внешний продукт. Принимал непосредственное участие в создании этой системы.
+
+      * [Time](https://www.tbank.ru/about/news/10-11-2022-time-instead-of-slack-tinkoff-has-developed-its-own-corporate-messenger/) — корпоративный мессенджер, который обеспечивает коммуникацией каждый день тысячи сотрудников компании.<br>
+        Сложно переоценить, как важны для компании внутренние коммуникации и автоматизация процессов вокруг этого. Участвовал в сопровождении и повышении надежности системы, а также организовал процесс поставки системы в качестве внешнего продукта (On-Premise).
+
+      * Участие в различных проектах, связанных с мониторингом: Nagios, Cacti, Zabbix, Prometheus, VictoriaMetrics, InfluxDB, ELK, Grafana, и других.
+
+      **Роль SRE** (инженер по надежности): автоматизация, сопровождение (обновление ОС/ПО, добавление нового оборудования, проведение плановых работ), меры по повышению стабильности (мониторинг, изменение архитектуры, оптимизация использования ресурсов), DevOps (CI/CD), дежурство (oncall, траблшутинг, написание постмортемов, и т.д.).
+
+      **Роль SRE Team Lead** (команда из 10 человек): построение процессов (Agile/Kanban, ретроспективы), распределение и приоритезация задач (Jira, методы <abbr title="Weighted Shortest Job First">WSJF</abbr>/<abbr title="Impact/Confidence/Ease">ICE</abbr>/<abbr title="Reach/Impact/Confidence/Effort">RICE</abbr>), планирование (Daily, ретроспектива, Roadmap, квартальные отчеты, <abbr title="Objectives and Key Results">OKR</abbr>), проведение собеседований, найм новых сотрудников, улучшение процессов найма, создание онбординга в команду, повышение квалификации команды (проверка навыков, обучение сотрудников и составление целей на развитие).<br>
+      Повысил свои навыки, пройдя различные внутренние курсы по лидству и успешно применяя полученные знания на практике, что обеспечило создание сплоченной и дружной команды.
+
+      [Выступление](https://www.youtube.com/watch?v=YuPJO90FUuw) с докладом на Saint HighLoad++ 2023, также есть статья-расшифровка «[7 петабайт логов в Elastic](https://habr.com/ru/companies/oleg-bunin/articles/757958/)».
+
+      Передача знаний (внутри компании и вовне):
+        * наставничество — повышение уровня знаний у коллег на длительной основе
+        * менторство — короткая серия встреч по интересующему вопросу
+        * стажировки — набор стажеров в команду и их обучение
+        * Тинькофф Финтех — участие в проведении курсов по направлению DevOps/SRE (выпуски: [2018](https://vk.com/photo-123851409_456240519), [2019](https://vk.com/photo-123851409_457242556))
+
+      Проведение собеседований: Computer Science, Troubleshooting.
+    achievements:
+      desc: |
+        Прошел путь: SysAdmin → Middle SRE → Senior SRE → Team Lead. Участвовал в построении высоконагруженной системы, которая покрывает мониторингом всю компанию, и выдерживает высокий SLA.
+      highlights:
+        - SRE
+        - Тимлидство
+        - Менторство
+        - Проведение собеседований
+        - Выступление на SHL++ 2023
+        - Общение с клиентами On-Premise/Cloud
+    technologies:
+      - Bash
+      - Python
+      - Java
+      - Javascript
+      - C#
+      - MySQL
+      - PostgresSQL
+      - Grafana
+      - Nagios
+      - Zabbix
+      - Prometheus
+      - VictoriaMetrics
+      - InfluxDB
+      - ELK
+      - GitLab
+      - kustomize
+      - Helm
+      - Ansible
+      - Terraform
+
+  - role: Администратор систем мониторинга
+    time: 2013 – 2016
+    company:
+      name: Промсвязьбанк
+      url: https://www.psbank.ru/
+    details: |
+      Администрирование и сопровождение систем мониторинга:
+        * CA Spectrum (мониторинг ИТ-инфраструктуры: ЦОД, ГО, многочисленные офисы в МиМО/регионах, создание сервисной модели приложений);
+        * CA Wily (мониторинг приложений);
+
+      Разработка обновленной архитектуры мониторинга всей ИТ-инфраструктуры банка
+      (CA Spectrum): совместная работа с другими подразделениями / внешними подрядчиками, написение документации/инструкций для дежурной смены, обучение сотрудников и передача опыта.
+
+      Интеграция с другими системами мониторинга: MS SCOM, Oracle Enterprise Manager (OEM), SAP Solution Manager.
+
+      Организация и курирование новых проектов: пилотирование систем мониторинга,
+      внедрение, перевод бизнес-пожеланий на язык технических
+      требований, проверка результатов: Riverbed, AppDynamics, CA Nimsoft/UIM, CA Performance Management, CA Service Operations Insight и других.
+    achievements:
+      desc: |
+        Появился опыт сопровождения и внедрения Enterprise-решений для мониторинга (общение с англоязычной техподдержкой, составление инструкций, скрипты для переноса данных и т.д.), а также мониторинга на основе SNMP. Периодически выполнял роль заместителя отдела.
+    technologies:
+      - CA Spectrum
+      - CA Nimsoft/UIM
+      - CA Performance Management
+      - CA Service Operations Insight
+      - CA Wily
+      - Riverbed APM
+      - AppDynamics
+      - SNMP
+      - Bash
+      - Power Shell
+
+  - role: Web-мастер
+    time: 2011 – 2013
+    company:
+      name: Argosy Technologies
+    details: |
+      * Создание новых сайтов компании с нуля**: argosy-tech.ru и argosy-tech.com.
+      * Расширение функционала сайта: продвинутые онлайн-опросники, формы обратной связи, интерактивная карта представительств, интерактивное слайдшоу, и т.д.
+      * Создание с нуля по собственной инициативе внутреннего корпоративного портала с целью структурирования большого объема информации, упрощения взаимодействия между отделами и региональными представительствами, увеличения скорости обработки менеджерами запросов от клиентов.
+      * Выполнение задач контент-менеджера: добавление и верстка всех материалов, создание и обработка практически всей графики, совместная работа в команде с PR-отделом для увеличения присутствия и цитируемости в Интернете, а также в бумажных изданиях.
+      * Создание автоматизированной системы составления отчётов и протоколов для Сургутнефтегаза.
+    achievements:
+      desc: |
+        Модернизация коснулась не только сайтов, но и их наполнения (переписаны практически все тексты). Также расширено присутствие компании в информационном поле и бумажных журналах.
+    technologies:
+      - Joomla
+      - Wordpress
+      - Bitrix
+      - PHP
+      - JavaScript
+      - HTML/CSS
+      - MySQL
+      - Adobe Photoshop
+      - Adobe Illustrator
+      - Adobe Lightroom
+      - CorelDRAW
+
+  - role: Системный инженер
+    time: 2010 – 2011
+    company:
+      name: Комита
+      url: https://www.comita.ru/
+    details: |
+      * Администрирование серверов — настройка и оптимизация, установка ПО и дополнительных пакетов, обновление ОС и ПО, траблшутинг, написание скриптов и автоматизация процессов (Windows Server, AIX 5L).
+      * Сопровождение и администрирование сервера приложений IBM WebSphere Application Server — установка/настройка/обновление, создание бэкапов, установка и запуск Java-приложений.
+      * Организация бесперебойной работы связки IBM WAS + Oracle DB 11g.
+    technologies:
+      - Windows Server
+      - AIX
+      - IBM WebSphere Application Server
+      - Oracle DB
+
+  - role: Системный администратор (мейнфремы)
+    time: 2008 – 2010
+    company:
+      name: ГВЦ ОАО «РЖД»
+      url: https://rzd.ru/
+    details: |
+      * Администрирование мейнфремов: сервер приложений IBM WebSphere Application Server, приложения на z/OS UNIX.
+      * Администрирование Windows-серверов, работа с виртуальными серверами (VirtualBox, VMWare).
+      * Cоздание web-приложений (PHP, Javascript, MySQL, MS SQL, DB2).
+      * Администрирование системы мониторинга CA Unicenter TNG (старые названия продукта: NSM, TND), а также IBM Tivoli Monitoring.
+    achievements:
+      desc: |
+        Старт карьеры начался с изучения z/OS и архитектуры мейнфреймов. Появился опыт работы с отказоустойчивыми инсталляциями серверов приложений и навыки работы с z/OS на уровне администратора. Также занимался мониторингом работы приложений и инфраструктуры.
+    technologies:
+      - z/OS
+      - IBM WebSphere Application Server
+      - CA Unicenter TNG
+      - IBM Tivoli Monitoring
+      - HTML/DHTML
+      - CSS
+      - Javascript
+      - PHP
+      - MySQL
+      - MS SQL
+      - DB2
+
+skills:
+  - category: OS
+    tools:
+      - name: Linux/Unix
+        level: 90%
+      - name: Windows Server
+        level: 20%
+      - name: z/OS
+        level: 30%
+  - category: Backend
+    tools:
+      - name: Python/Django
+        level: 40%
+      - name: C#
+        level: 25%
+      - name: Java
+        level: 15%
+      - name: PHP
+        level: 60%
+  - category: Frontend
+    tools:
+      - name: JavaScript
+        level: 45%
+      - name: TypeScript
+        level: 10%
+      - name: Node.js
+        level: 30%
+      - name: HTML/CSS/SASS/LESS
+        level: 85%
+      - name: Jekyll
+        level: 75%
+  - category: Мониторинг
+    tools:
+      - name: Grafana
+        level: 90%
+      - name: Prometheus
+        level: 90%
+      - name: VictoriaMetrics
+        level: 95%
+      - name: Zabbix
+        level: 75%
+      - name: Graphite
+        level: 40%
+      - name: InfluxDB
+        level: 10%
+      - name: Elastic (ELK)
+        level: 95%
+      - name: Loki
+        level: 12%
+  - category: others
+    tools:
+      - Ansible
+      - Bash
+      - Power Shell
+      - Git
+      - GitLab CI
+      - GitHub workflow
+      - k8s
+      - kustomize
+      - Helm
+      - Terraform
+
+awards:
+  - name: 5-е место на SHL2023++
+    description: |
+      Доклад на Saint HighLoad 2023++ [занял 5-е место](https://t.me/HighLoadChannel/3222).
+  - name: 700 комментариев под постом
+    description: |
+      Пост «[Splunk уходит из России (совсем)](https://habr.com/ru/articles/441004/)» на Хабре собрал 700 комментариев.
+
+languages:
+  - idiom: Русский
+    level: родной
+  - idiom: Английский
+    level: документация
+
+interests:
+  - name: Менторство
+    link: https://getmentor.dev/mentor/roman-nikolaev-1989
+  - name: Нумизматика
+    link: https://numis_channel.t.me
+  - name: Фотография
+    link: https://500px.com/p/nikolaev_rd

@@ -1,0 +1,32 @@
+---
+# Overrides for most of the sections titles
+
+# default: Career Profile
+career-profile: Обо мне
+
+# default: Awards
+awards: Награды
+
+# default: Education
+education: Образование
+
+# default: Work Experience
+experience: Опыт работы
+
+# default: Achievements
+achievements: Достижения
+
+# default: Technologies used
+technologies: Технологии
+
+# default: Interests
+interests: Интересы
+
+# default: Language
+language: Языки
+
+# default: Skills & Tools
+skills: Навыки
+
+# default: Others
+skills_others: Прочие навыки
