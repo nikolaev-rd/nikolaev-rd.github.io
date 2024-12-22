@@ -61,10 +61,10 @@ a.theme-btn-on-bg,
 .resume-header {
     background: $theme-color-primary;
     color: rgba(256, 256, 256, 0.9);
-    height: 240px;
+    height: 290px;
 
     .picture {
-        width: 240px;
+        width: 290px;
     }
 
     .name {
@@ -90,6 +90,8 @@ a.theme-btn-on-bg,
     .primary-info {
 
         ul {
+            margin-top: 50px;
+
             li {
                 margin-top: 0.5rem;
 
@@ -283,5 +285,8 @@ a.theme-btn-on-bg,
         @include border-radius(4px);
     }
 
+    .resume-body {
+        padding: ($spacer * 1.5) !important;
+    }
 
 }
