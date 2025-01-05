@@ -83,6 +83,4 @@ exclude:
   - vendor
   - docker-compose.yml
   - Dockerfile*
-  - "*.sh"
-  - ".*"
   - .env
