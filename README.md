@@ -11,11 +11,11 @@ This static site is builded on [Jekyll](https://jekyllrb.com/) and theme from Xi
 
 ## Launch
 
-Local site & linter can be launched via [Docker Compose](https://docs.docker.com/compose/).
+Local site & linters can be launched via [Docker Compose](https://docs.docker.com/compose/).
 
 ### Prepare
 
-Just Install [Docker Desktop](https://docs.docker.com/desktop/) (Docker Engine & Docker Compose — already included).
+Install [Docker Desktop](https://docs.docker.com/desktop/) (Docker Engine & Docker Compose — already included).
 
 Then your can change (if needed) variables for [docker-compose.yml](./docker-compose.yml) services in [`.env`](./.env).
 
@@ -30,7 +30,7 @@ Run all linters: `make lint`
 
 ### YAML lint
 
-- Run [yamllint](https://yamllint.readthedocs.io/en/stable/) via Docker: `make yaml-lint`
+- Run [yamllint](https://yamllint.readthedocs.io/en/stable/) via Docker Compose: `make yaml-lint`
 
 ### Launch HTML Proofer
 
