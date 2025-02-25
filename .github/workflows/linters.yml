@@ -1,0 +1,36 @@
+---
+# Super Linter GitHub Actions
+name: Linters
+
+# Start the job on all push
+on: push  # yamllint disable-line rule:truthy
+
+jobs:
+  lint:
+    name: Super Linters
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code base
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          # Full git history is needed to get a proper
+          # list of changed files within `super-linter`
+          fetch-depth: 0
+
+      # Run linters against code base
+      - name: Lint Code Base
+        uses: github/super-linter/slim@v4
+        env:
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LINTER_RULES_PATH: /
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_MARKDOWN: true
+          MARKDOWN_CONFIG_FILE: .markdownlint.yml
+          VALIDATE_YAML: true
+          YAML_CONFIG_FILE: .yamllint.yml
+          VALIDATE_DOCKERFILE_HADOLINT: true
+          DOCKERFILE_HADOLINT_FILE_NAME: .hadolint.yml
+          VALIDATE_GITHUB_ACTIONS: true
