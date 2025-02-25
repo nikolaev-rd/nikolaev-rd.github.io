@@ -32,4 +32,6 @@ jobs:
           # The directory to scan
           directory: "./_site"
           # The arguments to pass to HTMLProofer
-          arguments: ""
+          arguments: >-
+            --ignore-status-codes "400,403,409,429,999"
+            --ignore-urls "/www.psbank.ru/,/rzd.ru/"
