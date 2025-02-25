@@ -4,7 +4,7 @@
 
 # [CV](https://ru.wikipedia.org/wiki/Curriculum_vitae) site
 
-This static site is builded on [Jekyll](https://jekyllrb.com/) and theme from Xiaoying Riley ([3rd Wave Media](http://themes.3rdwavemedia.com/)).
+This static site is builded on [Jekyll](https://jekyllrb.com/) and theme from Xiaoying Riley ([3rd Wave Media](https://themes.3rdwavemedia.com/)).
 
 ## Configuration
 
@@ -43,7 +43,7 @@ Run all linters: `make lint`
 
 ## Credits
 
-- This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/)
+- This theme is designed by Xiaoying Riley at [3rd Wave Media](https://themes.3rdwavemedia.com/)
 - [Font Awesome](https://use.fontawesome.com/releases/v6.4.2/fontawesome-free-6.4.2-web.zip)
 
 ## License
