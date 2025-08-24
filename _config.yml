@@ -102,5 +102,4 @@ exclude:
   - CNAME
   - vendor
   - docker-compose.yml
-  - Dockerfile*
   - .env
