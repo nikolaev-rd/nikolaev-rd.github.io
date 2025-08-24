@@ -1,39 +1,112 @@
-@media print
-   {
-    @page {
-        size: A4;
-    }
-    body {
-       font-size: 12pt;
+@media print {
+  @page {
+    size: A4;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+
+  .resume-wrapper {
+    padding: 0px;
+
+    .resume-header {
+      height: auto;
+      padding-left: 0px !important;
+      margin-bottom: 1.5em;
+      background-color: unset;
+
+      .picture {
+        width: 220px;
+        @include border-radius(4px);
+      }
+
+      .media-body {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        padding-top: 0px !important;
+
+        .primary-info {
+          color: $theme-color-primary !important;
+
+          ul {
+            margin-top: 2em;
+            position: unset;
+          }
+        }
+
+        .secondary-info {
+          display: none;
+        }
+      }
+
+      .flex-column {
+        flex-direction: unset !important;
+        padding-bottom: 0px !important;
+      }
     }
 
-    img.avatar {
-        filter: grayscale(1);
-        -webkit-filter: greyscale(1);
-    }
-   .main-wrapper .time {
-       float: right;
-        color: black !important;
-        -webkit-print-color-adjust: exact; 
-   }
-    .sidebar-wrapper {
-        position: static;
-        float: right;
-        width: 40%;
-        -webkit-print-color-adjust: exact; 
+    .menu {
+      a {
+        display: none;
+      }
+
+      a.current-page {
+        display: inline-block;
+      }
+
+      span:after {
+        content: none;
+      }
     }
 
-    .remove-container.container-block {
-       display: none;
+    .resume-body {
+      padding: 0px !important;
+
+      .resume-section-title {
+        margin-bottom: 0px !important;
+      }
+
+      .resume-section-title::after {
+        display: none;
+      }
+
+      .resume-section-content {
+        .resume-timeline {
+          .resume-timeline-item {
+            padding-bottom: 1rem !important;
+          }
+        }
+
+        .resume-skill-item {
+          display: list-item;
+          margin-left: 1em;
+          margin-bottom: 0.1em;
+
+          h4 {
+            display: inline-flex;
+            margin-bottom: 0px;
+          }
+
+          h4::after {
+            content: ":";
+            font-weight: inherit;
+            margin-right: 0.2em;
+          }
+        }
+      }
     }
 
-    footer {
-       display: none;
+    .shadow-lg {
+      box-shadow: none !important;
     }
+  }
 
-    .skillset .level-bar-inner {
-       background-color: black !important;
-       -webkit-print-color-adjust: exact; 
-    }
+  .remove-container.container-block {
+    display: none;
+  }
 
+  footer {
+    display: none;
+  }
 }

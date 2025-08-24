@@ -1,10 +1,11 @@
-{% assign experiences = site.data.data.experiences %}
+{% assign experiences = site.data.profile.experiences %}
 {% if experiences %}
+{% assign experiences_limit = site.data.profile.resume.experiences_limit | default: none %}
 <section class="resume-section experience-section mb-5">
     <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">{{ site.data.labels.experience | default: "Work Experience" }}</h2>
     <div class="resume-section-content">
         <div class="resume-timeline position-relative">
-            {% for experience in experiences %}
+            {% for experience in experiences limit: experiences_limit %}
             <article class="resume-timeline-item position-relative pb-5">
 
                 <div class="resume-timeline-item-header mb-2">
@@ -26,32 +27,14 @@
                     <!--//row-->
                     <div class="resume-position-time">{{ experience.time }}</div>
                 </div>
-
                 <!--//resume-timeline-item-header-->
+
                 <div class="resume-timeline-item-desc">
-                    {% if experience.details %}
-                    <p>{{ experience.details | markdownify }}</p>
-                    {% endif %}
-                    {% if experience.achievements %}
-                    <h4 class="resume-timeline-item-desc-heading font-weight-bold"><i class="fa-solid fa-hands-clapping"></i> {{ site.data.labels.achievements | default: "Achievements" }}</h4>
-                    {% if experience.achievements.desc %}
-                    <p>{{ experience.achievements.desc }}</p>
-                    {% endif %}
-                    {% if experience.achievements.highlights %}
+                    {% assign highlights = experience.achievements.highlights %}
+                    {% if highlights.size > 0 %}
                     <ul>
-                        {% for highlight in experience.achievements.highlights %}
+                        {% for highlight in highlights %}
                         <li>{{ highlight }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                    {% endif %}
-                    {% if experience.technologies %}
-                    <h4 class="resume-timeline-item-desc-heading font-weight-bold"><i class="fa-solid fa-gear"></i> {{ site.data.labels.technologies | default: "Technologies used" }}</h4>
-                    <ul class="list-inline">
-                        {% for technology in experience.technologies %}
-                        <li class="list-inline-item">
-                            <span class="badge badge-primary badge-pill">{{ technology }}</span>
-                        </li>
                         {% endfor %}
                     </ul>
                     {% endif %}
@@ -62,10 +45,35 @@
             <!--//resume-timeline-item-->
             {% endfor %}
 
+            {% for experience in experiences limit: experiences_limit offset: continue %}
+            {% if experience %}
+            <div class="read-more">
+                <a href="/cv">{{ site.data.labels.read_more | default: "Experience for previous years — in a detailed CV..." }}</a>
+            </div>
+            {% break %}
+            {% endif %}
+            {% endfor %}
+
         </div>
         <!--//resume-timeline-->
 
     </div>
 </section>
 <!--//experience-section-->
+{% endif %}
+
+{%- assign technologies = experiences | map: 'technologies' | uniq | compact -%}
+{% if technologies.size > 0 %}
+<section class="resume-section experience-section mb-5">
+    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">{{ site.data.labels.technologies | default: "Technologies used" }}</h2>
+    <div class="resume-section-content">
+        <ul class="list-inline">
+            {% for technology in technologies %}
+            <li class="list-inline-item">
+                <span class="badge badge-primary badge-pill">{{ technology }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
 {% endif %}

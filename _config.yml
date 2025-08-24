@@ -5,8 +5,9 @@
 # https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 
 # Site's title.
+# Example: "Ben's Awesome Site"
 # Used as part of the title tag like "Home | Ben's Awesome Site".
-title: Роман Николаев — CV
+title: Роман Николаев
 
 # Global author information.
 # See Advanced usage:
@@ -26,8 +27,8 @@ tagline: Team Lead & Site Reliability Engineer
 description: ""
 
 # The full URL to your site.
-# Note: site.github.url will be used by default.
-url: https://nikolaev-rd.github.io
+# Note: site.github.url (https://jekyll.github.io/github-metadata/site.github/) will be used by default.
+url: https://nikolaev-rd.ru
 
 # Change it according to your repository name
 baseurl: ""
@@ -39,11 +40,15 @@ social:
     - https://github.com/nikolaev-rd
 
 # yamllint disable-line rule:comments
-#twitter:
-#  # The site's Twitter handle.
-#  username: stevedoe123
-#  # The site's default card type
-#  card: summary
+# twitter:
+#   username: stevedoe123  # The site's Twitter handle.
+#   card: summary  # The site's default card type
+
+# yamllint disable-line rule:comments
+# facebook:
+#   app_id: 1234  # Facebook app ID for Facebook insights
+#   publisher: 1234  # Facebook page URL or ID of the publishing entity
+#   admins: 1234  # Facebook user ID for domain insights linked to a personal account
 
 google_site_verification: ""  # Put your google verification tag here
 # End SEO
@@ -53,9 +58,24 @@ google_site_verification: ""  # Put your google verification tag here
 # gray | blue | turquoise | green | berry | red
 theme_skin: green
 
+# Options for Hits Counter: https://hitscounter.dev/
+counter:
+  label: Hits  # по умолчанию: Hits
+  message: ""  # по умолчанию: <empty>
+  url: https://nikolaev-rd.ru  # по умолчанию: {{ site.url }}/{{ site.baseurl }}
+  style: for-the-badge  # flat (default) | flat-square | social | plastic | for-the-badge
+  icon: eye-fill  # deafult: github
+  color: "#65c663"  # HEX color, default: #198754
+  timezone: Europe/Moscow  # по умолчанию: UTC
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# https://github.com/jekyll/jekyll-redirect-from?tab=readme-ov-file#installation
+whitelist:
+  - jekyll-redirect-from
 
 # Sass/SCSS
 sass:
@@ -82,5 +102,4 @@ exclude:
   - CNAME
   - vendor
   - docker-compose.yml
-  - Dockerfile*
   - .env

@@ -1,16 +1,16 @@
 <!-- markdownlint-disable MD041 -->
 [![Pages Deploy](https://github.com/nikolaev-rd/nikolaev-rd.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/nikolaev-rd/nikolaev-rd.github.io/actions/workflows/pages/pages-build-deployment)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fnikolaev-rd%2Fnikolaev-rd.github.io&count_bg=%2379C83D&title_bg=%23555555&title=👀)](https://hits.seeyoufarm.com)
+![Hits](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fnikolaev-rd.github.io%2F&label=Hits&icon=github&color=%2343d840&message=&style=flat&tz=Europe%2FMoscow)
 
-# [CV](https://ru.wikipedia.org/wiki/Curriculum_vitae) site
+# [CV](https://ru.wikipedia.org/wiki/Curriculum_vitae) & Resume site
 
 This static site is builded on [Jekyll](https://jekyllrb.com/) and theme from Xiaoying Riley ([3rd Wave Media](https://themes.3rdwavemedia.com/)).
 
 ## Configuration
 
 - Jekyll configuration for site: [`_config.yml`](./_config.yml)
-- CV:
-  - data structure: [_data/data.yml](./_data/data.yml)
+- CV & Resume:
+  - data structure: [_data/profile.yml](./_data/profile.yml)
   - labels renaming: [_data/labels.yaml](./_data/labels.yaml)
 
 ## Launch

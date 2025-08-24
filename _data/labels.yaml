@@ -1,32 +1,41 @@
 ---
-# Overrides for most of the sections titles
+# Тексты для большинства заголовков и секций
 
-# default: Career Profile
-career-profile: Обо мне
+# по умолчанию: CV
+cv: CV
 
-# default: Awards
+# по умолчанию: Resume
+resume: Резюме
+
+# по умолчанию: Experience for previous years — in a detailed CV...
+read_more: Опыт работы за предыдущие годы — в подробном CV...
+
+# по умолчанию: Summary
+summary: Обо мне
+
+# по умолчанию: Awards
 awards: Награды
 
-# default: Education
+# по умолчанию: Education
 education: Образование
 
-# default: Work Experience
+# по умолчанию: Work Experience
 experience: Опыт работы
 
-# default: Achievements
+# по умолчанию: Achievements
 achievements: Достижения
 
-# default: Technologies used
+# по умолчанию: Technologies used
 technologies: Технологии
 
-# default: Interests
+# по умолчанию: Interests
 interests: Интересы
 
-# default: Language
+# по умолчанию: Language
 language: Языки
 
-# default: Skills & Tools
+# по умолчанию: Skills & Tools
 skills: Навыки
 
-# default: Others
+# по умолчанию: Others
 skills_others: Прочие навыки

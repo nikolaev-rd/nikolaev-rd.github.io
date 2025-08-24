@@ -1,44 +1,43 @@
-{% assign header = site.data.data.header %}
+{% assign header = site.data.profile.header %}
 <header class="resume-header pt-4 pt-md-0">
     <div class="media flex-column flex-md-row">
         <img class="mr-3 img-fluid picture mx-auto" src="assets/images/{{ header.avatar }}" alt="Profile image">
         <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
             <div class="primary-info">
-                <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">{{ site.author }}</h1>
+                <h1 class="name mt-0 mb-1 text-uppercase text-uppercase">{{ site.author }}</h1>
                 <div class="title mb-3">{{ site.tagline }}</div>
                 <ul class="list-unstyled">
                     {% if header.phone %}
                     <li>
                         <a href="tel:{{ header.phone }}">
-                            <i class="fas fa-mobile-alt fa-fw mr-2" data-fa-transform="grow-6"></i>{{ header.phone }}
+                            <i class="fa-solid fa-phone mr-2" data-fa-transform="grow-6"></i>{{ header.phone }}
                         </a>
                     </li>
                     {% endif %}
                     {% if header.email %}
                     <li class="mb-2">
                         <a href="mailto:{{ header.email }}">
-                            <i class="far fa-envelope fa-fw mr-2" data-fa-transform="grow-3"></i>{{ header.email }}
+                            <i class="fa-solid fa-envelope mr-2" data-fa-transform="grow-3"></i>{{ header.email }}
                         </a>
                     </li>
                     {% endif %}
                     {% if header.telegram %}
                     <li class="mb-2 telegram">
                         <a href="https://{{ header.telegram }}.t.me">
-                            <i class="fa fa-brands fa-telegram mr-2" data-fa-transform="grow-3"></i>Telegram
+                            <i class="fa-brands fa-telegram mr-2" data-fa-transform="grow-3"></i>@{{ header.telegram }}
                         </a>
                     </li>
                     {% endif %}
                     {% if header.website %}
                     <li class="mb-2 website">
                         <a href="{{ header.website }}">
-                            <i class="fa fa-globe mr-2" data-fa-transform="grow-3"></i>{{ header.website | remove: "http://" | | remove: "https://" }}
+                            <i class="fa-solid fa-globe mr-2" data-fa-transform="grow-3"></i>{{ header.website | remove: "http://" | remove: "https://" }}
                         </a>
                     </li>
                     {% endif %}
                     {% if header.location %}
                     <li class="mb-2 location">
                         <i class="fa fa-solid fa-location-dot mr-2" data-fa-transform="grow-3"></i>{{ header.location }}
-                        <!--<i class="fa fa-solid fa-house mr-2" data-fa-transform="grow-4"></i>{{ header.location }}-->
                     </li>
                     {% endif %}
                 </ul>
@@ -70,7 +69,7 @@
                     <li class="mb-3">
                         <a href="https://github.com/{{ header.github }}">
                             <span class="fa-container text-center mr-2">
-                                <i class="fab fa-github-alt fa-fw"></i>
+                                <i class="fa-brands fa-github"></i>
                             </span>
                             GitHub
                         </a>
@@ -80,7 +79,7 @@
                     <li class="mb-3">
                         <a href="https://gitlab.com/{{ header.gitlab }}">
                             <span class="fa-container text-center mr-2">
-                                <i class="fab fa-gitlab fa-fw"></i>
+                                <i class="fa-brands fa-gitlab"></i>
                             </span>
                             GitLab
                         </a>
@@ -90,7 +89,7 @@
                     <li class="mb-3">
                         <a href="https://bitbucket.com/{{ header.bitbucket }}">
                             <span class="fa-container text-center mr-2">
-                                <i class="fab fa-bitbucket fa-fw"></i>
+                                <i class="fa-brands fa-bitbucket"></i>
                             </span>
                             Bitbucket
                         </a>
@@ -100,7 +99,7 @@
                     <li class="mb-3">
                         <a href="https://stackoverflow.com/users/{{ header.stack-overflow }}">
                             <span class="fa-container text-center mr-2">
-                                <i class="fab fa-stack-overflow fa-fw"></i>
+                                <i class="fa-brands fa-stack-overflow"></i>
                             </span>
                             StackOverflow
                         </a>
@@ -110,7 +109,7 @@
                     <li class="mb-3">
                         <a href="https://vk.com/{{ header.vk }}/">
                             <span class="fa-container text-center mr-2">
-                                <i class="fab fa-brands fa-vk"></i>
+                                <i class="fa-brands fa-vk"></i>
                             </span>
                             VK
                         </a>
@@ -120,7 +119,7 @@
                     <li class="mb-3">
                         <a href="https://twitter.com/{{ header.twitter }}">
                             <span class="fa-container text-center mr-2">
-                                <i class="fab fa-twitter fa-fw"></i>
+                                <i class="fa-brands fa-twitter"></i>
                             </span>
                             Twitter
                         </a>
@@ -130,19 +129,9 @@
                     <li class="mb-3">
                         <a href="https://instagram.com/{{ header.instagram }}/">
                             <span class="fa-container text-center mr-2">
-                                <i class="fab fa-instagram fa-fw"></i>
+                                <i class="fa-brands fa-instagram"></i>
                             </span>
                             Instagram
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if header.500px %}
-                    <li class="mb-3">
-                        <a href="https://500px.com/p/{{ header.500px }}/">
-                            <span class="fa-container text-center mr-2">
-                                <i class="fab fa-brands fa-500px"></i>
-                            </span>
-                            500px.com
                         </a>
                     </li>
                     {% endif %}

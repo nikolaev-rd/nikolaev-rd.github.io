@@ -1,1 +1,9 @@
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fnikolaev-rd%2Fnikolaev-rd.github.io&count_bg=%2379C83D&title_bg=%23555555&title=👀" alt="counter"/></a>
+{% assign default_url = site.url | append: '/' | append: site.baseurl %}
+{% assign url = site.counter.url | default: default_url | url_encode %}
+{% assign label = site.counter.label | default: 'Hits' | url_encode %}
+{% assign icon = site.counter.icon | default: 'github' | url_encode %}
+{% assign color = site.counter.color | default: '#198754' | url_encode %}
+{% assign message = site.counter.message | default: '' | url_encode %}
+{% assign style = site.counter.style | default: 'flat' | url_encode %}
+{% assign timezone = site.counter.timezone | default: 'UTC' | url_encode %}
+<img src="https://hitscounter.dev/api/hit?url={{ url }}&label={{ label }}&icon={{ icon }}&color={{ color }}&message={{ message }}&style={{ style }}&tz={{ timezone }}" alt="counter icon">

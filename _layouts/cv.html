@@ -1,5 +1,5 @@
 ---
-#Add "layout: compress" here to compress the html code
+# Add "layout: compress" here to compress the html code
 ---
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
@@ -14,17 +14,18 @@
     <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
       {% include header.html %}
       <div class="resume-body p-5">
+        {% include menu.html %}
         {% include summary.html %}
         <div class="row">
           <div class="col-lg-9">
-              {% include experience.html %}
+              {% include experience-cv.html %}
           </div>
           <div class="col-lg-3">
-              {% include skills.html %}
+              {% include skills-cv.html %}
               {% include education.html %}
               {% include awards.html %}
               {% include language.html %}
-              {% include interests.html %}
+              {% include interests-cv.html %}
           </div>
         </div>
         <!--//row-->

@@ -1,0 +1,24 @@
+{% assign skills = site.data.profile.skills %}
+{% if skills %}
+<section class="resume-section skills-section mb-5">
+    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">{{ site.data.labels.skills | default: "Skills &amp; Tools" }}</h2>
+    <div class="resume-section-content">
+        {% for skill in skills %}
+        <div class="resume-skill-item">
+        {% if skill.category != "others" %}
+            <h4 class="resume-skills-cat font-weight-bold">{{ skill.category }}</h4>
+            {%- assign tool = skill.tools | map: 'name' -%}
+            {{ tool | join: ', ' }}
+        {% else %}
+            <h4 class="resume-skills-cat font-weight-bold">{{ site.data.labels.skills_others | default 'Others' }}</h4>
+            {%- assign tool = skill.tools -%}
+            {{ tool | join: ', ' }}
+        {% endif %}
+        </div>
+        <!--//resume-skill-item-->
+        {% endfor %}
+    </div>
+    <!--resume-section-content-->
+</section>
+<!--//skills-section-->
+{% endif %}
