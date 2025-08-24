@@ -27,8 +27,8 @@ tagline: Team Lead & Site Reliability Engineer
 description: ""
 
 # The full URL to your site.
-# Note: site.github.url will be used by default.
-url: https://nikolaev-rd.github.io
+# Note: site.github.url (https://jekyll.github.io/github-metadata/site.github/) will be used by default.
+url: https://nikolaev-rd.ru
 
 # Change it according to your repository name
 baseurl: ""
