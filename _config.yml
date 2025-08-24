@@ -66,6 +66,11 @@ counter:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# https://github.com/jekyll/jekyll-redirect-from?tab=readme-ov-file#installation
+whitelist:
+  - jekyll-redirect-from
 
 # Sass/SCSS
 sass:
