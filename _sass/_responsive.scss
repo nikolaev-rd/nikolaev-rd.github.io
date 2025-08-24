@@ -1,65 +1,72 @@
-/* Extra small devices (phones, less than 768px) */
+// Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) {
+  body {
+    padding: 0px;
+  }
 
-    body{
-        padding: 0;
+  .resume-body {
+    padding: ($spacer * 1.5) !important;
+  }
+
+  .resume-wrapper {
+    padding-top: 0px;
+
+    .resume-header {
+      height: auto;
+      padding: 1.5rem !important;
+
+      .picture {
+        width: 320px;
+      }
+
+      .media-body {
+        padding-bottom: 0px !important;
+
+        .primary-info ul {
+          margin-top: 1.5em;
+        }
+
+        .secondary-info {
+          margin-top: 1.5em !important;
+        }
+      }
     }
 
-    .sidebar-wrapper {
-        position: static;
-        width: inherit;
+    .resume-section-content {
+      .resume-timeline {
+        .resume-timeline-item {
+          padding-bottom: 1.5rem !important;
+
+          .resume-timeline-item-header {
+            .flex-column {
+              flex-direction: initial !important;
+            }
+          }
+        }
+      }
     }
-
-    .main-wrapper {
-        padding: 30px;
-    }
-
-    .main-wrapper .time {
-        position: static;
-        display: block;
-        margin-top: 5px;
-    }
-
-    .main-wrapper .upper-row {
-        margin-bottom: 0;
-    }
-
-
+  }
 }
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-
+  .primary-info {
+    position: relative;
+    ul {
+      position: absolute;
+      bottom: 0px;
+    }
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
-    .skillset .level-title {
-        display: inline-block;
-        float: left;
-        width: 30%;
-        margin-bottom: 0;
-    }
-
-    .skillset .level-bar {
-        display: inline-block;
-        width: 70%;
-        float: left;
-        position: relative;
-        top: 1px;
-    }
-
-
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
 }
-
 
 /* Ex-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {
-
 }

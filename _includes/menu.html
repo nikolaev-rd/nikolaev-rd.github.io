@@ -1,0 +1,18 @@
+<div class="menu">
+  <span><a href="/">{{ site.data.labels.cv | default: "CV" }}</a></span>
+  <span><a href="/resume">{{ site.data.labels.resume | default: "Resume" }}</a></span>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const currentPageUrl = window.location.href;
+      const menuLinks = document.querySelectorAll('.menu a');
+
+      menuLinks.forEach(link => {
+        if (link.href === currentPageUrl) {
+          link.classList.add('current-page');
+          link.removeAttribute("href");
+        }
+      });
+  });
+</script>
