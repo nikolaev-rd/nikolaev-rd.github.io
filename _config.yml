@@ -5,6 +5,7 @@
 # https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 
 # Site's title.
+# Example: "Ben's Awesome Site"
 # Used as part of the title tag like "Home | Ben's Awesome Site".
 title: Роман Николаев
 
@@ -39,11 +40,15 @@ social:
     - https://github.com/nikolaev-rd
 
 # yamllint disable-line rule:comments
-#twitter:
-#  # The site's Twitter handle.
-#  username: stevedoe123
-#  # The site's default card type
-#  card: summary
+# twitter:
+#   username: stevedoe123  # The site's Twitter handle.
+#   card: summary  # The site's default card type
+
+# yamllint disable-line rule:comments
+# facebook:
+#   app_id: 1234  # Facebook app ID for Facebook insights
+#   publisher: 1234  # Facebook page URL or ID of the publishing entity
+#   admins: 1234  # Facebook user ID for domain insights linked to a personal account
 
 google_site_verification: ""  # Put your google verification tag here
 # End SEO
