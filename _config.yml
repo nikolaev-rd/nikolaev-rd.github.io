@@ -53,6 +53,16 @@ google_site_verification: ""  # Put your google verification tag here
 # gray | blue | turquoise | green | berry | red
 theme_skin: green
 
+# Options for Hits Counter: https://hitscounter.dev/
+counter:
+  label: Hits  # по умолчанию: Hits
+  message: ""  # по умолчанию: <empty>
+  url: https://nikolaev-rd.ru  # по умолчанию: {{ site.url }}/{{ site.baseurl }}
+  style: for-the-badge  # flat (default) | flat-square | social | plastic | for-the-badge
+  icon: eye-fill  # deafult: github
+  color: "#65c663"  # HEX color, default: #198754
+  timezone: Europe/Moscow  # по умолчанию: UTC
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
