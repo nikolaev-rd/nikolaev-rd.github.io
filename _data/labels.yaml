@@ -7,6 +7,16 @@ cv: CV
 # по умолчанию: Resume
 resume: Резюме
 
+questions:
+  # по умолчанию: Questions
+  title: Вопросы
+  # по умолчанию: Questions for the employer
+  header: Вопросы к работодателю
+  # по умолчанию: Preambula
+  preambula: Предисловие
+  # по умолчанию: Sources
+  sources: Источники
+
 # по умолчанию: Experience for previous years — in a detailed CV...
 read_more: Опыт работы за предыдущие годы — в подробном CV...
 

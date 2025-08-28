@@ -1,0 +1,41 @@
+{% assign questions = site.data.questions %}
+
+{% if questions.preambula %}
+<section class="mb-5">
+    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">{{ site.data.labels.questions.preambula | default: "Preambula" }}</h2>
+    <p class="mb-0">{{ questions.preambula | markdownify }}</p>
+</section>
+{% endif %}
+
+{% if questions.list %}
+<section class="mb-5">
+    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">{{ site.data.labels.questions.header | default: "Questions for the employer" }}</h2>
+    {% for item in questions.list %}
+    <article class="position-relative pb-3">
+        <div class="mb-2">
+            <div class="d-flex flex-column flex-md-row">
+                <h3 class="question-section-title font-weight-bold mb-1">{{ item.section }}</h3>
+            </div>
+        </div>
+        <div>
+            <p class="mb-0">{{ item.text | markdownify }}</p>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+{% endif %}
+
+{% if questions.sources %}
+<section class="mb-5">
+    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">{{ site.data.labels.questions.sources | default: "Sources" }}</h2>
+    <p class="mb-0">
+        <ul>
+            {% for source in questions.sources %}
+            {% if source.url %}
+            <li><a href="{{ source.url }}">{{ source.name | default: source.url }}</a></li>
+            {% endif %}
+            {% endfor%}
+        </ul>
+    </p>
+</section>
+{% endif %}
