@@ -1,11 +1,15 @@
 ---
-# Тексты для большинства заголовков и секций
+# Тексты для заголовков и секций
 
-# по умолчанию: CV
-cv: CV
+cv:
+  # по умолчанию: CV
+  title: CV
 
-# по умолчанию: Resume
-resume: Резюме
+resume:
+  # по умолчанию: Resume
+  title: Резюме
+  # по умолчанию: Experience for previous years — in a detailed CV...
+  read_more: Опыт работы за предыдущие годы — в подробном CV...
 
 questions:
   # по умолчанию: Questions
@@ -16,9 +20,6 @@ questions:
   preambula: Предисловие
   # по умолчанию: Sources
   sources: Источники
-
-# по умолчанию: Experience for previous years — in a detailed CV...
-read_more: Опыт работы за предыдущие годы — в подробном CV...
 
 # по умолчанию: Summary
 summary: Обо мне
