@@ -33,6 +33,9 @@ url: https://nikolaev-rd.ru
 # Change it according to your repository name
 baseurl: ""
 
+# https://jekyllrb.com/docs/permalinks/#built-in-formats
+permalink: pretty
+
 # Specify social profiles.
 # https://developers.google.com/search/docs/guides/enhance-site#add-your-sites-name-logo-and-social-links
 social:
