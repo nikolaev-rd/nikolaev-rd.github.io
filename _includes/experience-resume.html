@@ -48,7 +48,7 @@
             {% for experience in experiences limit: experiences_limit offset: continue %}
             {% if experience %}
             <div class="read-more">
-                <a href="/cv">{{ site.data.labels.read_more | default: "Experience for previous years — in a detailed CV..." }}</a>
+                <a href="{{ site.baseurl }}{% link index.md %}">{{ site.data.labels.resume.read_more | default: "Experience for previous years — in a detailed CV..." }}</a>
             </div>
             {% break %}
             {% endif %}

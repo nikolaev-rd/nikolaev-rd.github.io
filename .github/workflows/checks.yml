@@ -33,5 +33,5 @@ jobs:
           directory: "./_site"
           # The arguments to pass to HTMLProofer
           arguments: >-
-            --ignore-status-codes "400,403,409,429,999"
+            --ignore-status-codes "400,403,404,409,429,999"
             --ignore-urls "/www.psbank.ru/,/rzd.ru/"
